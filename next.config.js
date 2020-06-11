@@ -7,7 +7,6 @@ const bundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.ANALYZE === 'true',
 })
 
-
 //Used for fix Amplify Analytics with NextJS basically it removes a call to $window which breaks on the server
 global.navigator = () => null;
 
